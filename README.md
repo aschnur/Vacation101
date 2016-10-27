@@ -1,2 +1,2 @@
 # Vacation101
-The Ultimate Personalized Vacation Planner 
+The Ultimate Personalized NYC Vacation Planner 

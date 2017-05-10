@@ -119,3 +119,22 @@ connection.close;
         rs.movenext();
     }
 </script>
+
+<script>
+var d = new Date();
+var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+document.getElementById("demo").innerHTML = days[d.getDay()];
+</script>
+var today, someday, text;
+today = new Date();
+someday = new Date();
+someday.setFullYear(2100, 0, 14);
+
+if (someday > today) {
+    text = " Vacation101";
+} else {
+    text = "Vacation101.";
+}
+document.getElementById("demo").innerHTML = text;
+
+

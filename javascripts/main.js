@@ -46,3 +46,40 @@ commentsRef.on('child_changed', function(data) {
 commentsRef.on('child_removed', function(data) {
   deleteComment(postElement, data.key);
 });
+
+
+function validateForm()
+{
+    if(document.frm.username.value=="srinu")
+    {
+        $.ajax({
+            type: 'GET',
+            url: 'validateuser?username=document.frm.username.value' + '&Pwd=' + document.frm.userpassword.value,
+            success: function (data) {                   
+                if (data=='Y')
+                    alert('Valid User');
+                else
+                    alert('Invalid User');
+            }, cache: false,
+            error: function (xhr, ajaxOptions, thrownError) {
+                alert('failed.');
+            }
+            });
+    }
+}
+
+$.ajax({
+     dataType: 'json',
+     contentType: 'application/json; charset=utf-8',
+     url: INSTANCE_HOST + '/api/v2/user/session',
+     data: JSON.stringify({
+          'email': email,
+          'password': password
+          }),
+     method: 'POST',
+     success: function (response) {
+          // Handle success
+     },
+     error: function (response) {
+          // Handle error
+     }

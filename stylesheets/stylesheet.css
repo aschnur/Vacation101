@@ -22,7 +22,6 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -37,14 +36,11 @@ table {
   border-spacing: 0;
 }
 
-/*******************************************************************************
-Theme Styles
-*******************************************************************************/
 
 body {
   box-sizing: border-box;
   color:#373737;
-  background:  #87CEEB;
+  background: #87CEEB;
   font-size: 16px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;

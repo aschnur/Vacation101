@@ -142,12 +142,10 @@ document.getElementById("demo").innerHTML = text;
 function addWorkout() {
 	//search reading
 	//if user has no database create database using writeUserData
-	distance = document.getElementById("distance").value;
+	plan = document.getElementById("# of days").value;
 
-	var hours = document.getElementById("hours").value;
-	hours = parseInt(hours*360);
-	var minutes = document.getElementById("minutes").value;
-	minutes = parseInt(minutes*60);
+	var activities = document.getElementById("# of activities").value;
+	var meals = document.getElementById("# of meals").value;
 	var seconds = document.getElementById("seconds").value;
 	seconds =parseFloat(seconds);
 	//seconds = parseInt(seconds);
